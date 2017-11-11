@@ -1,19 +1,147 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.mzdhr.buildasinglescreenapp.MainActivity">
+    android:background="#ffe2d0"
+    tools:context="com.mzdhr.buildasinglescreenapp.MainActivity"
+    >
+
+    <ImageView
+        android:id="@+id/business_icon_imageView"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ice01_512"
+        />
+
 
     <TextView
+        android:id="@+id/business_name_textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:layout_below="@id/business_icon_imageView"
+        android:layout_centerHorizontal="true"
+        android:text="Cherries Shop"
+        android:textColor="#794E32"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/business_contact_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="cherry@cherries.com \n 202-555-0122"
+        android:textColor="#794E32"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_phone_black_48px"
+        android:layout_above="@id/business_contact_textView"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/business_des_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/business_name_textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="A shop that sells only cherries ice creams! Women, Men, Kids love it! In fact, everyone thinks it's wonderful and delicious"
+        android:textColor="#7F7168"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:id="@+id/business_open_hours_title_icon"
+        android:layout_below="@id/business_des_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_access_time_black_48px"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/business_open_hours_title_textView"
+        android:layout_below="@id/business_open_hours_title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Opens on"
+        android:textColor="#794E32"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+
+
+    <TextView
+        android:id="@+id/business_open_hours_textView"
+        android:layout_below="@id/business_open_hours_title_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="Monday to Friday: 10am-9pm \n Saturday and Sunday: 12pm - 5pm"
+        android:textColor="#7F7168"
+        android:textSize="16sp"
+        />
+
+
+    <ImageView
+        android:id="@+id/business_address_title_icon"
+        android:layout_below="@id/business_open_hours_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_location_on_black_48px"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/business_address_title_textView"
+        android:layout_below="@id/business_address_title_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Address"
+        android:textColor="#794E32"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/business_address_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/business_address_title_textView"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingEnd="8dp"
+        android:paddingStart="8dp"
+        android:text="803 Queen Road \n Miami Beach, FL 33139"
+        android:textColor="#7F7168"
+        android:textSize="16sp"
+        />
+
+
+</RelativeLayout>
