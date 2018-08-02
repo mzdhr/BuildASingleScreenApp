@@ -1,4 +1,4 @@
-# Popular Movies App
+# Build a Single Screen App - Ice Cream Shop App
 Android App to help customer contact an ice cream shop. Udacity Project number 01 for Android Basic NanoDegree.
 
 ## Built With
